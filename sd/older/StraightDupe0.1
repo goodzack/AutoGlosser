@@ -1,0 +1,1097 @@
+Sub SR1()
+'
+' SR1 Macro
+'
+
+' TURNS HYPHENS TO EQUALS- MIGHT WANT TO TURN OFF SOMETIMES
+
+With Selection.Find
+    .ClearFormatting
+    .Font.Name = “Straight”
+    .Text = ChrW(45)
+    .Replacement.ClearFormatting
+    .Replacement.Text = ChrW(61)
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+'THIS DELETES ACCENTS - MIGHT WANT TO TURN OFF SOMETIMES
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(233)
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(225)
+    .Replacement.ClearFormatting
+    .Replacement.Text = "a"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(237)
+    .Replacement.ClearFormatting
+    .Replacement.Text = "i"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "sh"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "s-h"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "ß"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "sh"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Font.Name = “Straight”
+    .Text = "ts"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "t-s"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "c"
+    .Font.Name = "Straight"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "ts"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "ç"
+    .Font.Name = "Straight"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "ts’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "∂"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "ch’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "txø"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "t-hw"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Font.Name = “Straight”
+    .Text = "tl"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "t-l"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "txø"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "t-hw"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "t÷"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "t-’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "p÷"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "p-’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "q÷"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "q-’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "c÷"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "c-’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "kø-÷"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "kw-’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "q÷"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "q-’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(339) & ChrW(248)
+    .Replacement.ClearFormatting
+    .Replacement.Text = "qw’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(8776) & ChrW(248)
+    .Font.Name = "Straight"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "xw"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Font.Name = "Times"
+    .Text = ChrW(730)
+    .Replacement.ClearFormatting
+    .Replacement.Text = "tth’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(181)
+    .Replacement.ClearFormatting
+    .Replacement.Text = "m’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(8721)
+    .MatchCase = True
+    .Replacement.ClearFormatting
+    .Replacement.Text = "w’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "÷"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Font.Name = "Straight"
+    .Text = "a:"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "aa"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "∆"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "ch"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+
+With Selection.Find
+    .ClearFormatting
+    .Font.Name = "Straight"
+    .Text = "e:"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "ee"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "xø"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "hw"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "i"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Font.Name = "Straight"
+    .Text = "i:"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "ii"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "k"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "k"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "kø"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "kw"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+'ch' through kw
+
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(730) & ChrW(248)
+    .Replacement.ClearFormatting
+    .Replacement.Text = "kw’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "¬"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "l’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "®"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "lh"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(956)
+    .Replacement.ClearFormatting
+    .Replacement.Text = "m’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "∫"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "n’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "u:"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "oo"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "u"
+    .Font.Name = "Straight"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "ou"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "π"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "p’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "œ"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "q’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "qø"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "qw"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "ß"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "sh"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "†"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "t’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "ƒ"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "th"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "√"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "tl’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "tƒ"
+    .Font.Name = "Straight"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "ts’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(32) & ChrW(775)
+    .Font.Name = "Straight"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "tth’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(59)
+    .Font.Name = "Straight"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "u"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(8721)
+    .MatchCase = True
+    .Font.Name = "Straight"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "w’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "≈"
+    .Font.Name = "Straight"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "x"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "¥"
+    .Font.Name = "Straight"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "y’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "©"
+    .Font.Name = "Straight"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "tth"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(730) & ChrW(248)
+    .Font.Name = "Straight"
+    .Replacement.ClearFormatting
+    .Replacement.Text = “kw’”
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "e" & ChrW(181) & "i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’mi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "e∫i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’ni"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "e¬i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’li"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = “e” & ChrW(8776) & “i”
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’wi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "e¥i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’yi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i" & ChrW(181) & "i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "i’mi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i∫i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "i’ni"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i¬i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "i’li"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i∑i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "i’wi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i¥i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "i’yi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+' the following change the English ts/tl-digraphs etc. with a hyphen back to how they should be. FIX LATER: target fonts that AREN'T straight, instead of targeting Times.
+
+With Selection.Find
+    .ClearFormatting
+    .Font.Name = "Times"
+    .Text = "t-s"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "ts"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Font.Name = "Times"
+    .Text = "t-l"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "tl"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Font.Name = "Times"
+    .Text = "s" & "-" & "h"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "sh"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = ChrW(729)
+    .Replacement.ClearFormatting
+    .Replacement.Text = "tth’"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+' distributing glottal for m
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "em’i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’mi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i’me"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’mi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "am’i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "a’mi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i’ma"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "im’a"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "em’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’mu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "u’me"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "um’e"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "u’ma"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "um’a"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "am’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "a’mu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "im’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "i’mu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+' distributing glottal for n
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "en’i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’ni"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i’ne"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’ni"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "an’i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "a’ni"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i’na"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "in’a"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "en’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’nu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "u’ne"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "un’e"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "u’na"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "un’a"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "an’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "a’nu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "in’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "i’nu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+' distributing glottal for l
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "el’i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’li"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i’le"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’li"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "al’i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "a’li"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i’la"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "il’a"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "el’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’lu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "u’le"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "ul’e"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "u’la"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "ul’a"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "al’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "a’lu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "il’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "i’lu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+' distributing glottal for y
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "ey’i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’yi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i’ye"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’yi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "ay’i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "a’yi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i’ya"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "iy’a"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "ey’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’yu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "u’ye"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "uy’e"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "u’ya"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "uy’a"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "ay’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "a’yu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "iy’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "i’yu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+' distributing glottal for w
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "ew’i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’wi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i’we"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’wi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "aw’i"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "a’wi"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "i’wa"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "iw’a"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "ew’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "e’wu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "u’we"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "uw’e"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "u’wa"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "uw’a"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "aw’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "a’wu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+With Selection.Find
+    .ClearFormatting
+    .Text = "iw’u"
+    .Replacement.ClearFormatting
+    .Replacement.Text = "i’wu"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+' for some reason, the macro turns "True" to "0". This should fix it but will also screw with anytime you have the string "True".
+
+With Selection.Find
+    .ClearFormatting
+    .Text = “True“
+    .Replacement.ClearFormatting
+    .Replacement.Text = "0"
+    .Execute Replace:=wdReplaceAll, Forward:=True, _
+        Wrap:=wdFindContinue
+End With
+
+
+
+End Sub
